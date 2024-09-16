@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Your existing CSS */
+        /* Reset CSS */
         * {
             margin: 0;
             padding: 0;
@@ -81,7 +80,7 @@
                 border-left: 3px solid #b74b4b;
                 border-bottom: 3px solid #b74b4b;
                 border-bottom-left-radius: 2rem;
-                padding: 1rem solid;
+                padding: 1rem;
                 background-color: #161616;
                 border-top: 0.1rem solid rgba(0,0,0,0.1);
             }
@@ -137,10 +136,6 @@
             font-size: 1.6rem;
         }
 
-        .home-img {
-            border-radius: 50%;
-        }
-
         .home-img img {
             position: relative;
             width: 32vw;
@@ -151,8 +146,7 @@
         }
 
         .home-img img:hover {
-            font-size: 1.8rem;
-            font-weight: 500;
+            transform: scale(1.05);
         }
 
         .social-icons a {
@@ -192,7 +186,7 @@
         }
 
         .btn:hover {
-            transform: scale3d(1.03);
+            transform: scale(1.03);
             background-color: #b74b4b;
             color: black;
             box-shadow: 0 0 25px #b74b4b;
@@ -202,50 +196,24 @@
             font-size: 34px;
             font-weight: 600;
             min-width: 280px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #b74b4b;
+            animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
         }
 
-        .typing-text span {
-            position: relative;
-        }
-
-        .typing-text span::before {
-            content: "software Developer";
-            color: #b74b4b;
-            animation: words 20s infinite;
-        }
-
-        .typing-text span::after {
-            content: "";
-            background-color: black;
-            position: absolute;
-            width: calc(100% + 8px);
-            height: 100%;
-            border-left: 3px solid black;
-            right: -8px; /* Adjusted to px */
-            animation: cursor 0.6s infinite;
-        }
-
-        @keyframes cursor {
+        @keyframes typing {
+            from {
+                width: 0;
+            }
             to {
-                border-left: 3px solid #b74b4b;
+                width: 100%;
             }
         }
 
-        @keyframes words {
-            0%, 20% {
-                content: "Web Developer";
-            }
-            21%, 40% {
-                content: "Programmer";
-            }
-            41%, 60% {
-                content: "Web Designer";
-            }
-            61%, 80% {
-                content: "Python Programmer";
-            }
-            81%, 100% {
-                content: "Data Analyst";
+        @keyframes blink {
+            50% {
+                border-color: transparent;
             }
         }
 
@@ -255,7 +223,7 @@
             }
         }
 
-        @media(max-width:995px) {
+        @media (max-width: 995px) {
             .home {
                 flex-direction: column;
                 margin: 5rem 4rem;
@@ -273,7 +241,6 @@
                 width: 70vw;
                 margin-top: 4rem;
             }
-        }
     </style>
 </head>
 <body>
@@ -284,14 +251,13 @@
         <div class="home-content">
             <h1>Hi, It's <span>Justin</span></h1>
             <h3 class="typing-text">and my niche is <span></span></h3>
-            <p>Third year college student that has knowledge in video and photo editing. Passionate about using technology to solve real-world problems, especially in education, and eager to continue growing my skills and contribute to innovative projects.</p>
+            <p>Third year college student with knowledge in video and photo editing. Passionate about using technology to solve real-world problems, especially in education, and eager to continue growing my skills and contribute to innovative projects.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/J.Mendozaaaaaaaaa" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://x.com/JustinMend42795" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/Udz06" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/@justinmendoza7183" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/J.Mendozaaaaaaaaa" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/JustinMend42795" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Udz06" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@justinmendoza7183" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
         </div>
     </section>
 </body>
