@@ -10,15 +10,15 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000000; /* Dark background for better contrast */
-      color: #ffffff; /* White text for readability */
+      background-color: #1e1e1e; /* Dark background for the whole page */
+      color: #e0e0e0; /* Light text color for contrast */
     }
 
     .section-title {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
+      font-size: 3rem; /* Larger title font size */
+      color: #ff6f61; /* Soft coral color for titles */
+      margin: 2rem 0;
       text-align: center;
-      color: #ff66cc; /* Heading color */
     }
 
     .resume-content {
@@ -26,19 +26,19 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      margin: 2rem auto;
     }
 
     .resume-image {
-      max-width: 80%;
+      max-width: 70%;
       height: auto;
       border-radius: 8px;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .resume-content p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       margin-bottom: 1rem;
-      color: #ffffff; /* Text color */
     }
 
     .skills-list {
@@ -46,26 +46,27 @@
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
+      margin: 2rem auto;
     }
 
     .skill-item {
-      background-color: #2a2a2a; /* Dark background for skill items */
+      background-color: #2a2a2a;
       border-radius: 10px;
-      padding: 2.5rem;
-      color: white; /* Text color */
+      padding: 2rem;
+      color: #f5f5f5;
       width: 100%;
-      max-width: 400px;
+      max-width: 350px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .skill-item:hover {
       transform: scale(1.05);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
     .progress-bar {
-      background-color: #444; /* Progress bar background */
+      background-color: #333;
       border-radius: 5px;
       height: 10px;
       margin-top: 0.5rem;
@@ -74,7 +75,7 @@
     }
 
     .progress {
-      background-color: #4caf50; /* Progress color */
+      background-color: #4caf50;
       height: 100%;
       width: 0; /* Placeholder; actual width set inline */
       transition: width 0.3s ease;
@@ -84,26 +85,25 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      margin: 2rem auto;
     }
 
     .experience-item {
-      background-color: #2a2a2a; /* Dark background for experience items */
+      background-color: #2a2a2a;
       border-radius: 8px;
       padding: 2rem;
-      color: white; /* Text color */
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
+      color: #f5f5f5;
+      font-size: 1.6rem;
     }
 
     .experience-item h3 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 1rem;
-      color: #ff66cc; /* Heading color */
+      color: #ff6f61; /* Soft coral color for section headings */
     }
 
     .experience-item p {
-      font-size: 1.6rem;
-      color: #ffffff; /* Text color */
+      font-size: 1.4rem;
     }
   </style>
 </head>
@@ -165,20 +165,20 @@
     <h2 class="section-title">Experience</h2>
     <div class="experience-list">
       <div class="experience-item">
-        <h3>Student of IT</h3>
-        <p>As an IT student, I learn how to program, build websites, manage databases, understand networks and operating systems, ensure software security, and apply project management skills.</p>
+        <h3>Student</h3>
+        <p>I’m currently a 3rd-year college student majoring in Information Technology. Over the course of my studies, I’ve gained experience in website development, programming, and project management. I have a strong foundation in web technologies like HTML, CSS, and JavaScript, and I’ve also explored PHP for backend development.</p>
       </div>
       <div class="experience-item">
-        <h3>Manager</h3>
-        <p>As a manager at a water station, I oversee daily operations, ensure water quality, manage staff, handle customer service, maintain equipment, manage inventory, and ensure compliance with regulations.</p>
+        <h3>Knowledge and Skills:</h3>
+        <p>A Website Development: I’ve created websites, including one for a band group, where I focused on design and functionality. I’ve also developed two games, "Color Game" and "Rock Paper Scissors," which taught me a lot about interactive web applications.</p>
       </div>
       <div class="experience-item">
-        <h3>Video Editor</h3>
-        <p>As a video editor, I cut, arrange, and enhance video footage, add effects and sound, and ensure the final product tells a compelling story or meets the project's requirements.</p>
+        <h3>Programming Languages:</h3>
+        <p>I’m proficient in HTML, CSS, and JavaScript, and I have working knowledge of PHP and Python for backend processes.</p>
       </div>
       <div class="experience-item">
-        <h3>Photo Editor</h3>
-        <p>As a photo editor, I adjust and enhance images by correcting colors, removing imperfections, cropping, and applying filters to ensure the photos look their best and align with the desired aesthetic or purpose.</p>
+        <h3>Project Management: </h3>
+        <p>I’ve managed small projects, from initial concept to final execution, including handling layouts, design, and coding.</p>
       </div>
     </div>
   </section>
